@@ -7,7 +7,7 @@ services:
     networks:
       - default
     volumes:
-      - .:/app
+      - .:/app/${APP_NAME}
     command: ["bash"]
     tty: true
     stdin_open: true

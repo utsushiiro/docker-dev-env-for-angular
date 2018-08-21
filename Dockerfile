@@ -4,6 +4,6 @@ ENV LANG C.UTF-8
  
 RUN npm install -g @angular/cli
 
-WORKDIR /app
+WORKDIR /app/${APP_NAME}
  
 EXPOSE 4200
