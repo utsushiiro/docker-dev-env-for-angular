@@ -8,6 +8,11 @@ services:
       - default
     volumes:
       - .:/app/${APP_NAME}
+      - node_modules/:/app/${APP_NAME}/node_modules
     command: ["bash"]
     tty: true
     stdin_open: true
+
+volumes:
+  node_modules:
+    driver: local
