@@ -9,7 +9,8 @@ services:
     volumes:
       - .:/app/${APP_NAME}
       - node_modules/:/app/${APP_NAME}/node_modules
-    command: ["bash"]
+    working_dir: /app/${APP_NAME}
+    command: ["ng", "serve", "--host", "0.0.0.0", "--poll", "1000"]
     tty: true
     stdin_open: true
 
