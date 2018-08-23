@@ -2,4 +2,4 @@ source .env
 
 docker-compose build
 
-docker-compose run -rm ng new $APP_NAME 
+docker-compose run --rm app ng new $APP_NAME 
